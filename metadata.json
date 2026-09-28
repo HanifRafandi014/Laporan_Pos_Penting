@@ -1,0 +1,6 @@
+{
+  "name": "Sistem Laporan Pos-Pos Penting & Kredit Cabang",
+  "description": "Perhitungan otomatis aset, kredit, tabungan, deposito, LAR, NPL, pendapatan, biaya, dan laba rugi per cabang dari file GLBAL, LLOAN, dan LHPDU disertai dashboard analitik interaktif.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

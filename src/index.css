@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  header, #btn-browse-glbal, #btn-browse-lloan, #btn-browse-lhpdu,
+  #btn-hitung-tunggakan, #btn-export-excel, #btn-print-laporan,
+  #btn-reset-default, #btn-audit-formula, #btn-download-templates,
+  .no-print, input[type="file"] {
+    display: none !important;
+  }
+
+  table {
+    width: 100% !important;
+    page-break-inside: auto;
+    font-size: 9pt !important;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  @page {
+    size: landscape;
+    margin: 1cm;
+  }
+}
